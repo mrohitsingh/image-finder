@@ -1,0 +1,29 @@
+.search {
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+    margin-left: 30%;
+    padding-top: 20px;
+    padding-left: 70px;
+    font-size: 1.7rem;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    outline: none;
+    place-items: center;
+}
+
+@media (min-width: 768px) {
+    .search {
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        column-count: 1;
+        width: 100%;
+    }
+}

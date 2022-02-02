@@ -1,0 +1,24 @@
+.imageResult {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.imageResultImg {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .imageResult {
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 1rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .imageResult {
+        column-count: 1;
+        width: 100%;
+    }
+}
